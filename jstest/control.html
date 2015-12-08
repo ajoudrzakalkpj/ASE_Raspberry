@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Hello LED </title>
+</head>
+<body>
+
+
+<form action = '/servomotor' method = 'post'>
+<h1> LED1 </h1>
+<input type = 'submit' value = 'on' name = 'servomotor2'>
+<input type = 'submit' value = 'off' name = 'servomotor2'>
+<h2> LED1 Reservation </h2>
+<input type = 'datetime-local' name = 'WMTime' id = 'WMTime' value = '' />
+<input type = 'submit' value = 'wmreserveOn' name = 'WMreserve'>
+<input type = 'submit' value = 'wmreserveOff' name = 'WMreserve'>
+</form>
+
+<form action = '/led' method = 'post'>
+<h1> LED2 </h1>
+<input type = 'submit' value = 'on' name = 'led'>
+<input type = 'submit' value = 'off' name = 'led'>
+<h2> LED Reservation </h2>
+<input type = "datetime-local" name = "LEDTime" id = "LEDTime" value = ""/>
+<input type = 'submit' value = 'ledreserveOn' name = 'ledreserve'>
+<input type = 'submit' value = 'ledreserveOff' name = 'ledreserve'>
+</form>
+
+
+<form action = '/TVled' method = 'post'>
+<h1> TV LED </h1>
+<input type = 'submit' value = 'on' name = 'tvled'>
+<input type = 'submit' value = 'off' name = 'tvled'>
+</form>
+
+
+<form action = '/TVchannel' method = 'post'>
+<h1> TV Channel </h1>
+<input type = 'submit' value = 'up' name = 'tvchannelcommand'>
+<input type = 'submit' value = 'down' name = 'tvchannelcommand'>
+<h2> TV Reservation </h2>
+<select name = 'TVCHValue'>
+	<option value = '1'> 1 </option>
+	<option value = '2'> 2 </option>
+	<option value = '3'> 3 </option>
+	<option value = '4'> 4 </option>
+	<option value = '5'> 5 </option>
+	<option value = '6'> 6 </option>
+	<option value = '7'> 7 </option>
+	<option value = '8'> 8 </option>
+	<option value = '9'> 9 </option>
+
+</select>
+<input type = 'datetime-local' name = 'TVCHTime' id = 'TVCHTime' value = '' />
+<input type = 'submit' value = 'tvreserveOn' name = 'TVreserve'>
+<input type = 'submit' value = 'tvreserveOff' name = 'TVreserve'>
+</form>
+
+
+</body>
+</html>
+
